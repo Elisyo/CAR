@@ -33,21 +33,24 @@ public class Client {
 	            System.out.println("(2) - Quitter");
 
 	            System.out.print("Rentrer le chiffre qui correspond à ce que vous souhaitez faire:\n");
-	            int selection = scanner.nextInt();
-
+	            int selection = 0;
+	            try{
+	            	selection = scanner.nextInt();
+	            }catch(Exception e){
+	            	
+	            }
 	            if (selection == 1) {
 	            	as = conn();
-					System.out.println("Client: Connection établie");
 					DataOutputStream out = new DataOutputStream(as.getOutputStream());
 					BufferedReader in = new BufferedReader(
 					new InputStreamReader(as.getInputStream()));
 					
 					scanner = new Scanner(System.in);
-	                System.out.print("Entrer une opération:\n");
+	                System.out.print("Entrer une opération: (op) (chiffre) (chiffre) \n");
 	                sentence = scanner.nextLine() + "\n";
 
 	                out.writeBytes(sentence);
-	    			System.out.println("Message envoyé");
+	    			//System.out.println("Message envoyé");
 	    			String response = in.readLine();
 	    			System.out.println("Résultat obtenu: " + response);
 	    			

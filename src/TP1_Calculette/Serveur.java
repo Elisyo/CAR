@@ -28,9 +28,11 @@ public class Serveur {
 			case ("/"):
 				try {
 					return ans / Integer.parseInt(tab[1]);
+				} catch (ArithmeticException e) {
+				    System.out.println("Division par zéro !");
 				} catch (Exception e) {
 					break;
-				}
+				}			
 			case ("*"):
 				try {
 					return ans * Integer.parseInt(tab[1]);
@@ -55,6 +57,8 @@ public class Serveur {
 			case ("/"):
 				try {
 					return Integer.parseInt(tab[1]) / Integer.parseInt(tab[2]);
+				} catch (ArithmeticException e) {
+				    System.out.println("Division par zéro !");
 				} catch (Exception e) {
 					break;
 				}
