@@ -12,7 +12,7 @@ public class Client {
 	private static Socket conn(){
 		Socket as = null;
 		try {
-			as = new Socket("172.18.12.235", 9632);
+			as = new Socket("172.18.12.59", 9632);
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -28,6 +28,7 @@ public class Client {
 				Scanner scanner = new Scanner(System.in);
 				String sentence = "";
 	            System.out.println("\nCalculette\n");
+	            System.out.println("Avez-vous changer l'ip du serveur ?");
 	            System.out.println("(1) - Rentrer un calcul");
 	            System.out.println("(2) - Quitter");
 
@@ -58,6 +59,7 @@ public class Client {
 	        }
 			
 		} catch (UnknownHostException ex) {
+			System.out.println("Ip du serveur non trouvée");
 			System.exit(-1);
 		} catch (IOException ex) {
 			System.exit(-1);
