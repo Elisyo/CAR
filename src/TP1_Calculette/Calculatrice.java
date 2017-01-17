@@ -1,3 +1,4 @@
+package TP1_Calculette;
 public class Calculatrice {
 
 	public int calculer(String calcul, Integer ans) {
