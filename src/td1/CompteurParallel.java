@@ -2,39 +2,79 @@ package td1;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Map;
 
-public class CompteurParallel {
-	public static void main(String [] args){
-		System.out.println("Word counter");
-		if(args.length < 1){
-			System.err.println("Usage : app <filename>");
-			System.exit(-1);
-		}
-		
-		CompteurParallel myApp = new CompteurParallel();
-		
-		try{
-			InputStream fil = new FileInputStream(args[0]);
-			InputStreamReader isr = new InputStreamReader(fil);
-			BufferedReader br = new BufferedReader(isr);
-			
-			String line = null;
-			
-			while ((line = br.readLine()) != null){
-				myApp.countWords(line);
-			}
-		}catch(IOException e){
-			System.err.println(e.getMessage());
-		}
-		
-	}
-
-	private void countWords(String line) {
-		// TODO Auto-generated method stub
-		
+public class CompteurParallel extends Thread{
+	public App app;
+	public String text;
+	
+	public CompteurParallel(App a, String t){
+		this.app = a;
+		this.text=t;
 	}
 	
+	public void run(){
+		String array[] = text.split("\\s");
+		for(String l : array){
+			app.countWords(l);
+		}
+	}
+	
+	public static void main(String [] args){
+		int nthreads = Integer.parseInt(args[0]);
+		StringBuilder lines [] = new StringBuilder [nthreads];
+		for(int i=0; i< nthreads; i++){
+			lines[i]= new StringBuilder();
+		}
+		
+		InputStream fil;
+		BufferedReader br = null;
+		try {
+			fil = new FileInputStream(args[0]);
+			InputStreamReader isr = new InputStreamReader(fil);
+			br = new BufferedReader(isr);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		String l = null;
+		int i=0;
+		try {
+			while((l = br.readLine()) != null){
+				lines[i].append(l);
+				i = (i+1) / nthreads;
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		App [] apps = new App[nthreads];
+		for(i=0;i<nthreads;i++){
+			apps[i]= new App();
+		}
+		
+		CompteurParallel [] compt = new CompteurParallel[nthreads];
+		for(i=0;i<nthreads;i++){
+			compt[i] = new CompteurParallel(apps[i], lines[i].toString());
+			compt[i].start();
+		}
+		
+		for(i=0;i<nthreads;i++){
+			try {
+				compt[i].join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		for(i=1;i<nthreads;i++){
+			apps[0].merge(apps[i]);
+		}
+		
+		Map.Entry<String, Integer> max = apps[0].findMax();
+	}
 }
