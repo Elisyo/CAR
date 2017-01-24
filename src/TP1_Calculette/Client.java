@@ -12,7 +12,7 @@ public class Client {
 	private static Socket conn(){
 		Socket as = null;
 		try {
-			as = new Socket("172.18.12.59", 9632);
+			as = new Socket("192.168.0.16", 9632);
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
