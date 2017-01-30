@@ -76,5 +76,7 @@ public class CompteurParallel extends Thread{
 		}
 		
 		Map.Entry<String, Integer> max = apps[0].findMax();
+
+	
 	}
 }

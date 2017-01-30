@@ -25,7 +25,10 @@ public class CompteurParallele extends Thread{
 	}
 	
 	public static void main(String [] args){
-		int nthreads = Integer.parseInt(args[0]);
+		
+		long time = System.currentTimeMillis();
+		
+		int nthreads = Integer.parseInt(args[1]);
 		StringBuilder lines [] = new StringBuilder [nthreads];
 		for(int i=0; i< nthreads; i++){
 			lines[i]= new StringBuilder();
@@ -76,5 +79,9 @@ public class CompteurParallele extends Thread{
 		}
 		
 		Map.Entry<String, Integer> max = apps[0].findMax();
+		System.out.println("Most frequent word: " + max.getKey()
+				+ " with " + max.getValue() + " occurrences");
+		
+		System.out.println("Temps d'execution: " + (System.currentTimeMillis() - time) + "ms");
 	}
 }
