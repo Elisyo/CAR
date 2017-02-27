@@ -5,8 +5,5 @@ GUILBERT FLORIAN
 
 Fichier 24MO
 
-Temps d'execution pour 2 threads: 4443ms
-Temps d'execution pour 8 threads: 2532ms
- 
-
-
+1 thread : 1234ms
+8 threads : 1226ms
