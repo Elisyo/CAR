@@ -1,6 +1,6 @@
-package td2;
+package tp_fileServer;
 
-import java.awt.Image;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -31,7 +31,7 @@ public class Protocol {
 		
 	}
 	
-	public void writeParImage(Image img){
+	public void writeParFile(File file){
 		
 	}
 
@@ -48,7 +48,7 @@ public class Protocol {
 		}
 	}
 
-	public Image readParImage() {
+	public File readParFile() {
 		// TODO Auto-generated method stub
 		return null;
 	}
