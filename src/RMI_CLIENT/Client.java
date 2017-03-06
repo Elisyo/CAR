@@ -4,18 +4,13 @@ import java.net.MalformedURLException;
 import java.net.UnknownHostException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
-import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.Scanner;
 
 import RMI_INTERFACE.ChatRoomInterface;
-import RMI_INTERFACE.ClientInterface;
-import RMI_INTERFACE.Information;
-import RMI_SERVER.ChatRoom;
-import RMI_SERVER.InformationImpl;
 
 
-public class Client{
+public class Client {
 
 	static ChatRoomInterface r = null;
 	
@@ -34,14 +29,15 @@ public class Client{
     	      
     	      ClientImpl ci = new ClientImpl(login,password);
     	      r.connexion(ci);
+    	      System.out.println(r.toString());
     	      while(true){  
-	    	      System.out.println(r.toString());
 	    	      
-	    	      if (r instanceof Information) {
+	    	      if (r instanceof ChatRoomInterface) {
 	    	    	Scanner messageScanner = new Scanner(System.in);
 	    	  		System.out.println("Veuillez saisir un message :");
 	    	  		String message = messageScanner.nextLine();
-	    	  		r.sendMessage(ci, new InformationImpl(message));
+	    	  		System.out.println("sendmessage");
+	    	  		r.sendMessage(ci,message);
 	    	    
 	    	  		if(message.equals("deco")){
 	    	  			r.deconnexion(ci);
