@@ -47,7 +47,7 @@ public class Client {
 						as.getInputStream()));
 
 				scanner = new Scanner(System.in);
-				envoiFichier(as, scanner);
+				envoiFichier(as, new File(scanner.toString()));
 
 				out.writeBytes(sentence);
 				// System.out.println("Message envoyé");
