@@ -4,7 +4,7 @@ import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 
-public class Server {
+public class RmiServer {
 
 	public static void main(String[] args) {
 	    try {

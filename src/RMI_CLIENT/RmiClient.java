@@ -10,7 +10,7 @@ import java.util.Scanner;
 import RMI_INTERFACE.ChatRoomInterface;
 
 
-public class Client {
+public class RmiClient {
 
 	static ChatRoomInterface r = null;
 	
@@ -34,10 +34,8 @@ public class Client {
 	    	      
 	    	      if (r instanceof ChatRoomInterface) {
 	    	    	Scanner messageScanner = new Scanner(System.in);
-	    	  		System.out.println("Veuillez saisir un message :");
 	    	  		String message = messageScanner.nextLine();
-	    	  		System.out.println("sendmessage");
-	    	  		r.sendMessage(ci,message);
+	    	  		r.sendMessage(ci,ci.login+": "+message);
 	    	    
 	    	  		if(message.equals("deco")){
 	    	  			r.deconnexion(ci);
