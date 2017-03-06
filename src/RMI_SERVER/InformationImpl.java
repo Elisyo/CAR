@@ -1,8 +1,10 @@
-package rmi;
+package RMI_SERVER;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.Scanner;
+
+import RMI_INTERFACE.Information;
 
 
 public class InformationImpl extends UnicastRemoteObject implements Information {
@@ -13,13 +15,9 @@ public class InformationImpl extends UnicastRemoteObject implements Information 
 		super();
 	}
 
-	public String getInformation() throws RemoteException {
+	public String getInformation(String info) throws RemoteException {
 		System.out.println("Invocation de la méthode getInformation()");
-		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Veuillez saisir un message :");
-		String str = sc.nextLine();
-		
-		return str;
+		System.out.println(info);
+		return info;
 	}
 }

@@ -4,6 +4,8 @@ import java.net.InetAddress;
 import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
 
+import RMI_SERVER.InformationImpl;
+
 public class Main {
 
 	public static void main(String[] args) {

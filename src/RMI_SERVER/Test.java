@@ -1,9 +1,11 @@
-package rmi;
+package RMI_SERVER;
 
 import java.applet.*;
 import java.awt.*;
 import java.net.InetAddress;
 import java.rmi.*;
+
+import RMI_INTERFACE.Information;
 
 public class Test extends Applet {
 
@@ -15,7 +17,7 @@ public class Test extends Applet {
       Remote r = Naming.lookup("rmi://"+InetAddress.getLocalHost().getHostAddress()+"/TestRMI");
 
       if (r instanceof Information) {
-       s = ((Information) r).getInformation();
+       s = ((Information) r).getInformation("Bonjour");
       }
     } catch (Exception e) {
       e.printStackTrace();

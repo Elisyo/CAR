@@ -1,8 +1,9 @@
-package rmi;
+package RMI_SERVER;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
+
 
 public class Serveur {
 
