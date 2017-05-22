@@ -1,0 +1,94 @@
+04-Apr-2017 11:19:51.039 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.43
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 28 2017 14:42:59 UTC
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.43.0
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-38-generic
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b14
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/conf/logging.properties
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Apr-2017 11:19:51.041 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Apr-2017 11:19:51.042 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/endorsed
+04-Apr-2017 11:19:51.042 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43
+04-Apr-2017 11:19:51.042 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43
+04-Apr-2017 11:19:51.042 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/temp
+04-Apr-2017 11:19:51.042 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/oracle/instantclient_11_2:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+04-Apr-2017 11:19:51.128 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Apr-2017 11:19:51.137 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Apr-2017 11:19:51.139 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Apr-2017 11:19:51.140 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Apr-2017 11:19:51.141 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 332 ms
+04-Apr-2017 11:19:51.157 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+04-Apr-2017 11:19:51.157 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.43
+04-Apr-2017 11:19:51.170 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/examples de l'application web
+04-Apr-2017 11:19:51.766 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/examples has finished in 596 ms
+04-Apr-2017 11:19:51.766 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/host-manager de l'application web
+04-Apr-2017 11:19:51.793 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/host-manager has finished in 27 ms
+04-Apr-2017 11:19:51.794 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/manager de l'application web
+04-Apr-2017 11:19:51.816 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/manager has finished in 23 ms
+04-Apr-2017 11:19:51.817 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/docs de l'application web
+04-Apr-2017 11:19:51.833 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/docs has finished in 16 ms
+04-Apr-2017 11:19:51.834 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/ROOT de l'application web
+04-Apr-2017 11:19:51.849 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/ROOT has finished in 15 ms
+04-Apr-2017 11:19:51.851 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Apr-2017 11:19:51.855 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+04-Apr-2017 11:19:51.857 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 715 ms
+04-Apr-2017 11:20:34.898 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Apr-2017 11:20:34.951 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Apr-2017 11:20:35.001 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+04-Apr-2017 11:20:35.017 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Apr-2017 11:20:35.018 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Apr-2017 11:20:35.019 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Apr-2017 11:20:35.021 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+04-Apr-2017 11:21:44.954 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.43
+04-Apr-2017 11:21:44.955 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 28 2017 14:42:59 UTC
+04-Apr-2017 11:21:44.955 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.43.0
+04-Apr-2017 11:21:44.955 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-38-generic
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b14
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/conf/logging.properties
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Apr-2017 11:21:44.956 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/endorsed
+04-Apr-2017 11:21:44.957 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43
+04-Apr-2017 11:21:44.957 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43
+04-Apr-2017 11:21:44.957 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/temp
+04-Apr-2017 11:21:44.957 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /opt/oracle/instantclient_11_2:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+04-Apr-2017 11:21:45.057 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Apr-2017 11:21:45.066 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Apr-2017 11:21:45.067 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Apr-2017 11:21:45.069 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Apr-2017 11:21:45.069 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 333 ms
+04-Apr-2017 11:21:45.086 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+04-Apr-2017 11:21:45.086 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.43
+04-Apr-2017 11:21:45.095 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/examples de l'application web
+04-Apr-2017 11:21:45.882 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/examples has finished in 786 ms
+04-Apr-2017 11:21:45.882 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/host-manager de l'application web
+04-Apr-2017 11:21:45.902 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/host-manager has finished in 20 ms
+04-Apr-2017 11:21:45.902 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/manager de l'application web
+04-Apr-2017 11:21:45.922 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/manager has finished in 20 ms
+04-Apr-2017 11:21:45.922 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/docs de l'application web
+04-Apr-2017 11:21:45.935 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/docs has finished in 13 ms
+04-Apr-2017 11:21:45.935 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/ROOT de l'application web
+04-Apr-2017 11:21:45.948 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/m1miage/guilbertf/Documents/Semestre2/CAR/apache-tomcat-8.0.43/webapps/ROOT has finished in 13 ms
+04-Apr-2017 11:21:45.950 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Apr-2017 11:21:45.956 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+04-Apr-2017 11:21:45.957 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 888 ms
+04-Apr-2017 11:38:38.043 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Apr-2017 11:38:38.095 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Apr-2017 11:38:38.146 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+04-Apr-2017 11:38:38.172 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Apr-2017 11:38:38.176 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Apr-2017 11:38:38.178 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Apr-2017 11:38:38.180 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
